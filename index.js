@@ -7,7 +7,7 @@ function findMatching (arr,s){
 }
 function fuzzyMatch(arr,s){
    arr= arr.filter(function(v){
-    return v.toLowerCase().indexOf(s.toLowerCase()) !== -1;
+    return v.toLowerCase().indexOf(s.toLowerCase()) === 0;
   })
   return arr;
 }
